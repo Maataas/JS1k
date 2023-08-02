@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let vardas = "Matas";
+        let pavarde = "Mačiulis";
+        let gimMetai = "1998";
+        let currentYear = "2023"
+
+        console.log("1. Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai  tikrus). Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :Aš esu Vardenis Pavardenis. Man yra XX metai(ų).");
+
+        console.log(("Aš esu " + vardas + " " + pavarde + ". Man yra " + (currentYear - gimMetai) + " " + "metai(ų)"));
+
+        console.log("2. Naudokite funkcija Math.random(). Sukurkite du kintamuosius ir naudodamiesi funkcija Math.random() jiems priskirkite atsitiktines reikšmes nuo 0 iki 4. Didesnę reikšmę padalinkite iš mažesnės. Atspausdinkite rezultatą jį suapvalinę iki 2 skaičių po kablelio.");
+ 
+        let num1 = Math.round(Math.random() * 4);
+        let num2 = Math.round(Math.random() * 4);
+        console.log(num1);
+        console.log(num2);
+
+        if(num1 != 0 && num2 != 0) {
+
+            if(num1 > num2) {
+            console.log(Math.round(num1 / num2 * 100) / 100);
+            }else{
+            console.log(Math.round(num2 / num1 * 100) / 100);
+            }
+
+        }else {
+            console.log("Dalyba is nulio negalima");
+        }
+
+        console.log("3. Naudokite funkcija Math.random(). Sukurkite tris kintamuosius ir naudodamiesi funkcija Math.random() jiems priskirkite atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite kintąmąjį turintį vidurinę reikšmę.");
+
+        let rnd1 = Math.round(Math.random() * 25);
+        console.log(rnd1);
+        let rnd2 = Math.round(Math.random() * 25);
+        console.log(rnd2);
+        let rnd3 = Math.round(Math.random() * 25);
+        console.log(rnd3);
+
+        if((rnd1 > rnd2 && rnd1 < rnd3) || (rnd1 < rnd2 && rnd1 > rnd3)){
+            console.log(rnd1);
+
+        }if((rnd2 > rnd1 && rnd2 < rnd3) || (rnd2 > rnd3 && rnd2 < rnd1)){
+            console.log(rnd2);
+
+        }if((rnd3 > rnd1 && rnd3 < rnd2) || (rnd3 > rnd2 && rnd3 < rnd1)){
+            console.log(rnd3);
+        }
+        
+        console.log("4. Įvedami skaičiai - a, b, c –kraštinių ilgiai, trys kintamieji (naudokite ​Math.random()​ funkcija nuo 1 iki 10). Parašykite JavaScript programą, kuri nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų.");
+
+        min = 1;
+        max = 10
+        let a = min + Math.round(Math.random() * (max - min));
+        let b = min + Math.round(Math.random() * (max - min));
+        let c = min + Math.round(Math.random() * (max - min));
+        console.log(a, b, c);
+
+        if (a + b > c && a + c > b && b + c > a){
+            console.log("Galima sudaryti trikampi");
+        }else {
+            console.log("Negalima sudaryti trikampo");
+        }
+
+        console.log("5. Sukurkite keturis kintamuosius ir ​Math.random()​ funkcija sugeneruokite jiems reikšmes nuo 0 iki 2. Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. (sprendimui masyvo nenaudoti)");
+
+        
+
+
+
+        
+
+
+
+
+
+    </script>
+</body>
+
+</html>
