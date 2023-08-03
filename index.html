@@ -58,8 +58,8 @@
         
         console.log("4. Įvedami skaičiai - a, b, c –kraštinių ilgiai, trys kintamieji (naudokite ​Math.random()​ funkcija nuo 1 iki 10). Parašykite JavaScript programą, kuri nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų.");
 
-        min = 1;
-        max = 10
+        let min = 1;
+        let max = 10
         let a = min + Math.round(Math.random() * (max - min));
         let b = min + Math.round(Math.random() * (max - min));
         let c = min + Math.round(Math.random() * (max - min));
@@ -73,7 +73,137 @@
 
         console.log("5. Sukurkite keturis kintamuosius ir ​Math.random()​ funkcija sugeneruokite jiems reikšmes nuo 0 iki 2. Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. (sprendimui masyvo nenaudoti)");
 
+        let num51 = Math.round(Math.random() * 2);
+        let num52 = Math.round(Math.random() * 2);
+        let num53 = Math.round(Math.random() * 2);
+        let num54 = Math.round(Math.random() * 2);
+
+        console.log(num51, num52, num53, num54);
+
+        let count0 = 0;
+        let count1 = 0;
+        let count2 = 0;
+
+
+        if(num51 == 0) {
+            count0++;
+        }
+
+        if(num52 == 0) {
+            count0++;
+        }
+
+        if(num53 == 0) {
+            count0++;
+        }
+
+        if(num54 == 0) {
+            count0++;
+        }
+
+        if(num51 == 1) {
+            count1++;
+        }
+
+        if(num52 == 1) {
+            count1++;
+        }
+
+        if(num53 == 1) {
+            count1++;
+        }
+
+        if(num54 == 1) {
+            count1++;
+        }
+
+        if(num51 == 2) {
+            count2++;
+        }
+
+        if(num52 == 2) {
+            count2++;
+        }
+
+        if(num53 == 2) {
+            count2++;
+        }
+
+        if(num54 == 2) {
+            count2++;
+        }
+
+        console.log("Nuliu radome " + count0);
+        console.log("Vienetu radome " + count1);
+        console.log("Dvejetu radome " + count2);
+
+        console.log("6. Naudokite funkcija Math.random(). Atspausdinkite 3 skaičius nuo -10 iki 10. Skaičiai mažesni už 0 turi būti  laužtiniuose skliaustuose [], 0 -  (), didesni už 0 {}. ");
+
+        min = -10;
+        max = 10;
+
+        let num61 = min + Math.round(Math.random() * (max - min));
+        let num62 = min + Math.round(Math.random() * (max - min));
+        let num63 = min + Math.round(Math.random() * (max - min));
+
+        if(num61 < 0) {
+            console.log("[" + num61 + "]");
+        }
+
+        if(num61 == 0) {
+            console.log("(" + num61 + ")");
+        }
+
+        if(num61 > 0) {
+            console.log("{" + num61 + "}");
+        }
+
+        if(num62 < 0) {
+            console.log("[" + num62 + "]");
+        }
+
+        if(num62 == 0) {
+            console.log("(" + num62 + ")");
+        }
+
+        if(num62 > 0) {
+            console.log("{" + num62 + "}");
+        }
+
+        if(num63 < 0) {
+            console.log("[" + num63 + "]");
+        }
+
+        if(num63 == 0) {
+            console.log("(" + num63 + ")");
+        }
+
+        if(num63 > 0) {
+            console.log("{" + num63 + "}");
+        }
+
+        console.log("Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. Žvakių kiekį generuokite ​Math.random()​ funkcija nuo 5 iki 3000.")
+
+        let zvakSkaicius = 5 + Math.round(Math.random() * 2995 )
         
+        if(zvakSkaicius > 1000 && zvakSkaicius < 2000) {
+            console.log(zvakSkaicius + " Uz " + ((zvakSkaicius * 0.97 * 100) / 100));
+        }
+
+        if(zvakSkaicius > 2000) {
+            console.log(zvakSkaicius + " Uz " + ((zvakSkaicius * 0.96 * 100) / 100));
+        }
+
+        if(zvakSkaicius < 1000) {
+            console.log(zvakSkaicius + " Uz " + zvakSkaicius);
+        }
+        
+
+        
+
+
+
+
 
 
 
